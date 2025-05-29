@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Calendar, Youtube, Linkedin } from 'lucide-react';
+import { ArrowRight, Calendar, Youtube, Linkedin, Brain } from 'lucide-react';
 
 export const MeetKunaal = () => {
   return (
