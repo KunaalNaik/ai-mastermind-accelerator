@@ -1,20 +1,26 @@
 
 import React from 'react';
 import { HeroSection } from '@/components/HeroSection';
+import { RebrandNotice } from '@/components/RebrandNotice';
 import { WhoIsThisFor } from '@/components/WhoIsThisFor';
 import { EngagementLevels } from '@/components/EngagementLevels';
+import { CodeOfHonorPreview } from '@/components/CodeOfHonorPreview';
 import { SuccessStories } from '@/components/SuccessStories';
-import { WhyChooseUs } from '@/components/WhyChooseUs';
+import { MeetKunaal } from '@/components/MeetKunaal';
 import { FinalCTA } from '@/components/FinalCTA';
+import { Navigation } from '@/components/Navigation';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-black text-white font-montserrat">
+      <Navigation />
       <HeroSection />
+      <RebrandNotice />
       <WhoIsThisFor />
       <EngagementLevels />
+      <CodeOfHonorPreview />
       <SuccessStories />
-      <WhyChooseUs />
+      <MeetKunaal />
       <FinalCTA />
     </div>
   );

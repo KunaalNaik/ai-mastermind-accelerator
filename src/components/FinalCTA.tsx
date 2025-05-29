@@ -9,21 +9,21 @@ export const FinalCTA = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-r from-gray-900 to-blue-900 text-white">
+    <section id="join" className="py-20 bg-gradient-to-br from-gray-900 to-black border-t border-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Choose Your Entry Point
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Start Building. Start Shipping. Start Earning.
           </h2>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            Start your AI journey today. Every expert was once a beginner.
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            Choose your entry point and transform your relationship with AI today.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           <Button 
             size="lg" 
-            className="bg-green-600 hover:bg-green-700 text-white py-4 px-6 transition-all duration-300 transform hover:scale-105"
+            className="bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-yellow-600 hover:to-orange-700 text-black py-6 px-6 font-bold transition-all duration-300 transform hover:scale-105"
             onClick={() => scrollToLevel('level-0')}
           >
             Start Free
@@ -32,8 +32,7 @@ export const FinalCTA = () => {
           
           <Button 
             size="lg"
-            variant="outline" 
-            className="border-white text-white hover:bg-white hover:text-blue-900 py-4 px-6 transition-all duration-300"
+            className="bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 text-white py-6 px-6 font-bold transition-all duration-300 transform hover:scale-105"
             onClick={() => scrollToLevel('level-1')}
           >
             Quick Start - ₹399
@@ -42,8 +41,7 @@ export const FinalCTA = () => {
           
           <Button 
             size="lg"
-            variant="outline" 
-            className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white py-4 px-6 transition-all duration-300"
+            className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-6 px-6 font-bold transition-all duration-300 transform hover:scale-105"
             onClick={() => scrollToLevel('level-2')}
           >
             Join Community
@@ -52,7 +50,7 @@ export const FinalCTA = () => {
           
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-yellow-600 hover:to-orange-700 text-white py-4 px-6 transition-all duration-300 transform hover:scale-105"
+            className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white py-6 px-6 font-bold transition-all duration-300 transform hover:scale-105"
             onClick={() => scrollToLevel('level-3')}
           >
             Go Elite
@@ -61,9 +59,9 @@ export const FinalCTA = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-blue-200 text-lg">
+          <p className="text-gray-400 text-lg">
             Questions? Email us at{' '}
-            <a href="mailto:hello@datasciencemasterminds.com" className="text-cyan-400 hover:text-cyan-300 underline">
+            <a href="mailto:hello@datasciencemasterminds.com" className="text-yellow-400 hover:text-yellow-300 underline">
               hello@datasciencemasterminds.com
             </a>
           </p>
