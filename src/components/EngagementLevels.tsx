@@ -24,7 +24,8 @@ export const EngagementLevels = () => {
       ],
       cta: "Reserve Free Spot",
       ctaColor: "from-yellow-500 to-orange-600",
-      highlight: true
+      highlight: true,
+      delay: "0s"
     },
     {
       id: 'level-1',
@@ -42,7 +43,8 @@ export const EngagementLevels = () => {
         "1-week email support"
       ],
       cta: "Buy & Build Now",
-      ctaColor: "from-green-500 to-blue-600"
+      ctaColor: "from-green-500 to-blue-600",
+      delay: "0.2s"
     },
     {
       id: 'level-2',
@@ -60,7 +62,8 @@ export const EngagementLevels = () => {
         "Certificate of completion"
       ],
       cta: "Join Launchpad",
-      ctaColor: "from-blue-500 to-purple-600"
+      ctaColor: "from-blue-500 to-purple-600",
+      delay: "0.4s"
     },
     {
       id: 'level-3',
@@ -78,7 +81,8 @@ export const EngagementLevels = () => {
         "1-on-1 founder mentorship"
       ],
       cta: "Apply for Builder",
-      ctaColor: "from-purple-500 to-pink-600"
+      ctaColor: "from-purple-500 to-pink-600",
+      delay: "0.6s"
     }
   ];
 
@@ -86,10 +90,10 @@ export const EngagementLevels = () => {
     <section id="engagement-levels" className="py-20 bg-black">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in">
             🚀 Choose Your Stage
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Whether you're just starting or ready to build products, we have the perfect path for your AI journey
           </p>
         </div>
@@ -99,46 +103,50 @@ export const EngagementLevels = () => {
             <Card 
               key={index} 
               id={level.id}
-              className={`relative bg-gray-900 border-gray-700 p-8 transition-all duration-300 hover:scale-105 ${
-                level.highlight ? 'ring-2 ring-yellow-500 scale-105' : 'hover:border-yellow-500'
+              className={`relative bg-gray-900 border-gray-700 p-8 transition-all duration-500 hover:scale-105 hover:-translate-y-2 cursor-pointer group animate-fade-in ${
+                level.highlight ? 'ring-2 ring-yellow-500 scale-105 shadow-2xl shadow-yellow-500/20' : 'hover:border-yellow-500 hover:shadow-2xl hover:shadow-yellow-500/10'
               }`}
+              style={{ animationDelay: level.delay }}
             >
-              {/* Badge */}
-              <Badge className={`absolute -top-3 left-6 ${level.badgeColor} text-white px-3 py-1 font-bold`}>
+              {/* Badge with animation */}
+              <Badge className={`absolute -top-3 left-6 ${level.badgeColor} text-white px-3 py-1 font-bold transition-all duration-300 group-hover:scale-110 animate-pulse`}>
                 {level.badge}
               </Badge>
 
-              {/* Icon */}
+              {/* Icon with enhanced animation */}
               <div className="flex justify-center mb-6">
-                <div className={`w-16 h-16 bg-gradient-to-br ${level.ctaColor} rounded-full flex items-center justify-center`}>
-                  <level.icon className="w-8 h-8 text-white" />
+                <div className={`w-16 h-16 bg-gradient-to-br ${level.ctaColor} rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-125 group-hover:rotate-12`}>
+                  <level.icon className="w-8 h-8 text-white transition-all duration-300 group-hover:scale-110" />
                 </div>
               </div>
 
-              {/* Level */}
+              {/* Content */}
               <div className="text-center mb-4">
-                <div className="text-sm font-semibold text-yellow-400 mb-2">{level.level}</div>
-                <h3 className="text-xl font-bold text-white mb-2">{level.title}</h3>
-                <div className="text-2xl font-bold text-green-400 mb-3">{level.price}</div>
-                <p className="text-gray-400 mb-6 font-semibold">{level.description}</p>
+                <div className="text-sm font-semibold text-yellow-400 mb-2 transition-all duration-300 group-hover:text-yellow-300">{level.level}</div>
+                <h3 className="text-xl font-bold text-white mb-2 transition-all duration-300 group-hover:text-yellow-400">{level.title}</h3>
+                <div className="text-2xl font-bold text-green-400 mb-3 transition-all duration-300 group-hover:scale-110">{level.price}</div>
+                <p className="text-gray-400 mb-6 font-semibold transition-all duration-300 group-hover:text-gray-300">{level.description}</p>
               </div>
 
-              {/* Features */}
+              {/* Features with staggered animation */}
               <ul className="space-y-3 mb-8">
                 {level.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start text-sm text-gray-300">
-                    <CheckCircle className="w-4 h-4 text-green-400 mr-3 mt-0.5 flex-shrink-0" />
+                  <li key={idx} className="flex items-start text-sm text-gray-300 transition-all duration-300 hover:text-white hover:translate-x-1">
+                    <CheckCircle className="w-4 h-4 text-green-400 mr-3 mt-0.5 flex-shrink-0 transition-all duration-300 hover:scale-125" />
                     {feature}
                   </li>
                 ))}
               </ul>
 
-              {/* CTA */}
+              {/* CTA with enhanced hover effects */}
               <Button 
-                className={`w-full py-3 font-bold transition-all duration-300 bg-gradient-to-r ${level.ctaColor} hover:scale-105 text-white shadow-lg`}
+                className={`w-full py-3 font-bold transition-all duration-300 bg-gradient-to-r ${level.ctaColor} hover:scale-105 hover:-translate-y-1 text-white shadow-lg hover:shadow-2xl group-hover:shadow-yellow-500/25`}
               >
-                {level.cta}
+                <span className="transition-all duration-300 group-hover:scale-105">{level.cta}</span>
               </Button>
+
+              {/* Glow effect on hover */}
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/0 via-yellow-400/5 to-yellow-400/0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
             </Card>
           ))}
         </div>
