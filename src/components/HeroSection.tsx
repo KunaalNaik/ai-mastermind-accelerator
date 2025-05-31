@@ -11,13 +11,13 @@ export const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-black text-white pt-20 pb-16">
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-green-900/20 animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-green-900/20"></div>
       
       {/* Floating particles animation */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-yellow-400 rounded-full animate-bounce opacity-70" style={{ animationDelay: '0s', animationDuration: '3s' }}></div>
-        <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-green-400 rounded-full animate-bounce opacity-60" style={{ animationDelay: '1s', animationDuration: '4s' }}></div>
-        <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-blue-400 rounded-full animate-bounce opacity-80" style={{ animationDelay: '2s', animationDuration: '3.5s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-yellow-400 rounded-full animate-bounce-slow opacity-70"></div>
+        <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-green-400 rounded-full animate-bounce-slow opacity-60" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-blue-400 rounded-full animate-bounce-slow opacity-80" style={{ animationDelay: '4s' }}></div>
       </div>
       
       <div className="relative container mx-auto px-6 py-20 lg:py-32">
@@ -26,7 +26,7 @@ export const HeroSection = () => {
           <div className="flex justify-center mb-8 animate-fade-in">
             <div className="relative group">
               <Brain className="w-20 h-20 text-cyan-400 transition-all duration-500 group-hover:scale-110 group-hover:text-cyan-300" />
-              <Zap className="w-8 h-8 text-yellow-400 absolute -top-2 -right-2 animate-pulse transition-all duration-300 group-hover:scale-125" />
+              <Zap className="w-8 h-8 text-yellow-400 absolute -top-2 -right-2 transition-all duration-300 group-hover:scale-125" />
               <div className="absolute inset-0 bg-cyan-400/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-700 ease-out"></div>
             </div>
           </div>

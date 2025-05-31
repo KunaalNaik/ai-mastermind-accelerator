@@ -109,13 +109,13 @@ export const EngagementLevels = () => {
               style={{ animationDelay: level.delay }}
             >
               {/* Badge with animation */}
-              <Badge className={`absolute -top-3 left-6 ${level.badgeColor} text-white px-3 py-1 font-bold transition-all duration-300 group-hover:scale-110 animate-pulse`}>
+              <Badge className={`absolute -top-3 left-6 ${level.badgeColor} text-white px-3 py-1 font-bold transition-all duration-300 group-hover:scale-110`}>
                 {level.badge}
               </Badge>
 
               {/* Icon with enhanced animation */}
               <div className="flex justify-center mb-6">
-                <div className={`w-16 h-16 bg-gradient-to-br ${level.ctaColor} rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-125 group-hover:rotate-12`}>
+                <div className={`w-16 h-16 bg-gradient-to-br ${level.ctaColor} rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-125 group-hover:rotate-6`}>
                   <level.icon className="w-8 h-8 text-white transition-all duration-300 group-hover:scale-110" />
                 </div>
               </div>

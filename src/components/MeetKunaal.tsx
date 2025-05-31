@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Calendar, Youtube, Linkedin, Brain } from 'lucide-react';
+import { ArrowRight, Calendar, Youtube, Brain } from 'lucide-react';
 
 export const MeetKunaal = () => {
   return (
@@ -21,8 +21,8 @@ export const MeetKunaal = () => {
                   <Brain className="w-8 h-8 text-black transition-transform duration-300 group-hover:scale-110" />
                 </div>
                 {/* Floating rings animation */}
-                <div className="absolute inset-0 rounded-full border-2 border-yellow-400/30 scale-110 animate-pulse"></div>
-                <div className="absolute inset-0 rounded-full border border-yellow-400/20 scale-125 animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute inset-0 rounded-full border-2 border-yellow-400/30 scale-110"></div>
+                <div className="absolute inset-0 rounded-full border border-yellow-400/20 scale-125"></div>
               </div>
             </div>
 
@@ -63,7 +63,7 @@ export const MeetKunaal = () => {
               </div>
 
               {/* Decorative elements */}
-              <div className="hidden lg:block absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-gradient-to-r from-yellow-500/10 to-transparent rounded-full animate-pulse"></div>
+              <div className="hidden lg:block absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-gradient-to-r from-yellow-500/10 to-transparent rounded-full"></div>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ export const FinalCTA = () => {
   return (
     <section id="join" className="py-20 bg-gradient-to-br from-gray-900 to-black border-t border-gray-800 relative overflow-hidden">
       {/* Animated background elements */}
-      <div className="absolute inset-0 bg-gradient-to-r from-yellow-900/5 via-green-900/5 to-blue-900/5 animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-yellow-900/5 via-green-900/5 to-blue-900/5"></div>
       
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-12">
