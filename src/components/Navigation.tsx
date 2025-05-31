@@ -2,36 +2,57 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: 'About', href: '#about' },
-    { name: 'Code of Honor', href: '/code-of-honor' },
-    { name: 'Meet Kunaal Naik', href: '#meet-kunaal' },
-    { name: 'YouTube', href: '#youtube' },
-    { name: 'Join the Tribe', href: '#join' }
+    { name: 'About', href: '#about', isExternal: false },
+    { name: 'Code of Honor', href: '/code-of-honor', isExternal: false },
+    { name: 'Meet Kunaal Naik', href: '#meet-kunaal', isExternal: false },
+    { name: 'YouTube', href: '#youtube', isExternal: false },
+    { name: 'Join the Tribe', href: '#join', isExternal: false }
   ];
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <div className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent">
+          <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
             AI Mastermind
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-300 hover:text-yellow-400 transition-colors duration-300"
-              >
-                {item.name}
-              </a>
+              item.isExternal ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-300 hover:text-yellow-400 transition-colors duration-300"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                item.href.startsWith('#') ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-gray-300 hover:text-yellow-400 transition-colors duration-300"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="text-gray-300 hover:text-yellow-400 transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )
             ))}
           </div>
 
@@ -50,14 +71,36 @@ export const Navigation = () => {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-gray-800">
             {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="block py-2 text-gray-300 hover:text-yellow-400 transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </a>
+              item.isExternal ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="block py-2 text-gray-300 hover:text-yellow-400 transition-colors duration-300"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </a>
+              ) : (
+                item.href.startsWith('#') ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="block py-2 text-gray-300 hover:text-yellow-400 transition-colors duration-300"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block py-2 text-gray-300 hover:text-yellow-400 transition-colors duration-300"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )
             ))}
           </div>
         )}
