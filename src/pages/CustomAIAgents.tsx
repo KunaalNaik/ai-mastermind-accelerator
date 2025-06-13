@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
@@ -127,7 +126,7 @@ const CustomAIAgents = () => {
               
               <div className="flex justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
+                  src="/lovable-uploads/42282076-dab9-4a15-b868-dc834ed2f6f9.png"
                   alt="Kunaal Naik"
                   className="w-64 h-64 rounded-full object-cover border-4 border-yellow-400"
                 />

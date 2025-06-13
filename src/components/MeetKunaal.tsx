@@ -13,7 +13,7 @@ export const MeetKunaal = () => {
             <div className="flex justify-center lg:justify-start">
               <div className="relative group">
                 <img 
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
+                  src="/lovable-uploads/42282076-dab9-4a15-b868-dc834ed2f6f9.png"
                   alt="Kunaal Naik"
                   className="w-80 h-80 rounded-full object-cover border-4 border-yellow-400 shadow-2xl transition-all duration-700 group-hover:scale-105 group-hover:border-yellow-300 group-hover:shadow-yellow-500/25"
                 />

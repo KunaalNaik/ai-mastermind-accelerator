@@ -19,8 +19,15 @@ export const Navigation = () => {
     <nav className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
-            AI Mastermind
+          <Link to="/" className="flex items-center space-x-3 hover:scale-105 transition-transform duration-300">
+            <img 
+              src="/lovable-uploads/c57ee613-58f7-42c6-b5b9-055fa248c710.png" 
+              alt="AI Mastermind Logo" 
+              className="w-8 h-8"
+            />
+            <span className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent">
+              AI Mastermind
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
