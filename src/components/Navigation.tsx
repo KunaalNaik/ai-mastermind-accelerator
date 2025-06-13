@@ -11,7 +11,7 @@ export const Navigation = () => {
     { name: 'About', href: '#about', isExternal: false },
     { name: 'Code of Honor', href: '/code-of-honor', isExternal: false },
     { name: 'Meet Kunaal Naik', href: '#meet-kunaal', isExternal: false },
-    { name: 'YouTube', href: '#youtube', isExternal: false },
+    { name: 'Custom AI Agents', href: '/custom-ai-agents', isExternal: false },
     { name: 'Join the Tribe', href: '#join', isExternal: false }
   ];
 
