@@ -10,7 +10,7 @@ export const MeetKunaal = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Profile Image with enhanced animations */}
-            <div className="flex justify-center lg:justify-start animate-fade-in">
+            <div className="flex justify-center lg:justify-start">
               <div className="relative group">
                 <img 
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
@@ -28,25 +28,26 @@ export const MeetKunaal = () => {
 
             {/* Content with staggered animations */}
             <div className="text-center lg:text-left">
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                 Meet Kunaal Naik
               </h2>
               
-              <div className="text-xl text-yellow-400 font-semibold mb-6 animate-fade-in hover:text-yellow-300 transition-colors duration-300" style={{ animationDelay: '0.4s' }}>
+              <div className="text-xl text-yellow-400 font-semibold mb-6 hover:text-yellow-300 transition-colors duration-300">
                 AI Strategist • TEDx Speaker • Coach
               </div>
               
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed animate-fade-in hover:text-gray-200 transition-colors duration-300" style={{ animationDelay: '0.6s' }}>
+              <p className="text-lg text-gray-300 mb-8 leading-relaxed hover:text-gray-200 transition-colors duration-300">
                 From building Fortune 500 AI solutions to empowering 5000+ professionals, 
                 Kunaal has been at the forefront of the AI revolution. His mission: make AI 
                 accessible, practical, and profitable for everyone.
               </p>
 
               {/* Social Links with enhanced animations */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                 <Button 
                   size="lg"
                   className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-3 font-bold transition-all duration-300 hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-red-500/25 group"
+                  onClick={() => window.open('https://www.youtube.com/KunaalNaik', '_blank')}
                 >
                   <Youtube className="mr-2 w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
                   <span className="transition-all duration-300 group-hover:tracking-wide">Watch on YouTube</span>

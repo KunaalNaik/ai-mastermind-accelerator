@@ -24,6 +24,7 @@ export const EngagementLevels = () => {
       ],
       cta: "Reserve Free Spot",
       ctaColor: "from-yellow-500 to-orange-600",
+      link: "https://learn.datasciencemasterminds.com/l/aa01946050",
       highlight: true,
       delay: "0s"
     },
@@ -44,12 +45,13 @@ export const EngagementLevels = () => {
       ],
       cta: "Buy & Build Now",
       ctaColor: "from-green-500 to-blue-600",
+      link: "https://learn.datasciencemasterminds.com/l/1d6e410cbc",
       delay: "0.2s"
     },
     {
       id: 'level-2',
       level: "Level 2",
-      title: "AI Agent Launchpad",
+      title: "AI Agent Accelerator",
       price: "₹12,000",
       description: "Become the person who replaces repetitive work with automations in 21 days.",
       icon: CheckCircle,
@@ -61,8 +63,9 @@ export const EngagementLevels = () => {
         "Peer support and networking",
         "Certificate of completion"
       ],
-      cta: "Join Launchpad",
+      cta: "Join Accelerator",
       ctaColor: "from-blue-500 to-purple-600",
+      link: "https://learn.datasciencemasterminds.com/l/eefd47b625",
       delay: "0.4s"
     },
     {
@@ -86,14 +89,20 @@ export const EngagementLevels = () => {
     }
   ];
 
+  const handleLevelClick = (link?: string) => {
+    if (link) {
+      window.open(link, '_blank');
+    }
+  };
+
   return (
     <section id="engagement-levels" className="py-20 bg-black">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             🚀 Choose Your Stage
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Whether you're just starting or ready to build products, we have the perfect path for your AI journey
           </p>
         </div>
@@ -103,10 +112,9 @@ export const EngagementLevels = () => {
             <Card 
               key={index} 
               id={level.id}
-              className={`relative bg-gray-900 border-gray-700 p-8 transition-all duration-500 hover:scale-105 hover:-translate-y-2 cursor-pointer group animate-fade-in ${
+              className={`relative bg-gray-900 border-gray-700 p-8 transition-all duration-500 hover:scale-105 hover:-translate-y-2 cursor-pointer group ${
                 level.highlight ? 'ring-2 ring-yellow-500 scale-105 shadow-2xl shadow-yellow-500/20' : 'hover:border-yellow-500 hover:shadow-2xl hover:shadow-yellow-500/10'
               }`}
-              style={{ animationDelay: level.delay }}
             >
               {/* Badge with animation */}
               <Badge className={`absolute -top-3 left-6 ${level.badgeColor} text-white px-3 py-1 font-bold transition-all duration-300 group-hover:scale-110`}>
@@ -141,6 +149,7 @@ export const EngagementLevels = () => {
               {/* CTA with enhanced hover effects */}
               <Button 
                 className={`w-full py-3 font-bold transition-all duration-300 bg-gradient-to-r ${level.ctaColor} hover:scale-105 hover:-translate-y-1 text-white shadow-lg hover:shadow-2xl group-hover:shadow-yellow-500/25`}
+                onClick={() => handleLevelClick(level.link)}
               >
                 <span className="transition-all duration-300 group-hover:scale-105">{level.cta}</span>
               </Button>
