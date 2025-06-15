@@ -1,8 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ArrowLeft, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Navigation } from '@/components/Navigation';
 
 const CodeOfHonor = () => {
   const [openSections, setOpenSections] = useState<number[]>([]);
@@ -140,8 +140,10 @@ const CodeOfHonor = () => {
 
   return (
     <div className="min-h-screen bg-black text-white font-montserrat">
+      <Navigation />
+      
       {/* Header */}
-      <div className="bg-gradient-to-r from-gray-900 to-black border-b border-gray-800 py-8">
+      <div className="bg-gradient-to-r from-gray-900 to-black border-b border-gray-800 py-8 pt-24">
         <div className="container mx-auto px-6">
           <Link 
             to="/" 
