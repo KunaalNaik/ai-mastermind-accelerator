@@ -7,7 +7,7 @@ export const SuccessStories = () => {
   const testimonials = [
     {
       name: "Battu O.U",
-      role: "Student",
+      role: "Flogrammer",
       company: "AI Mastermind Program",
       quote: "Kunaal is only the best mentor in this world I feel. I have gone through many Digital coaches till now but no one can replace Kunal in training. May god bless him to train more people like us.🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻",
       rating: 5,
@@ -15,7 +15,7 @@ export const SuccessStories = () => {
     },
     {
       name: "Indrajit Pal",
-      role: "Student",
+      role: "Flogrammer",
       company: "AI Mastermind Program",
       quote: "In my journey of learning, I've come across many digital coaches, but none have touched my heart and mind the way Kunal has. He isn't just a mentor—he's a true guide, someone who genuinely wants to see us grow. His way of teaching makes you feel seen, understood, and empowered. I feel truly blessed to have learned under him. May God continue to bless him so he can uplift many more lives like ours. A heartfelt thank you to Arpan as well, whose support made executing tasks smoother and more achievable. Grateful to both of them for being such a beautiful part of this learning experience.",
       rating: 5,
@@ -23,7 +23,7 @@ export const SuccessStories = () => {
     },
     {
       name: "Suju Pillai",
-      role: "Student",
+      role: "Flogrammer",
       company: "AI Mastermind Program",
       quote: "Kunal's session stood out compared to others I've attended. I really appreciated his focus on practical application alongside theory (not just theory). Thank you, Kunal!",
       rating: 5,
