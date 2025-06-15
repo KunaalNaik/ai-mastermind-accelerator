@@ -6,29 +6,26 @@ import { Star } from 'lucide-react';
 export const SuccessStories = () => {
   const testimonials = [
     {
-      name: "Rahul Sharma",
-      role: "Marketing Director",
-      company: "TechCorp",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-      quote: "The AI agents I built saved our team 20 hours per week. ROI was immediate!",
+      name: "Battu O.U",
+      role: "Student",
+      company: "AI Mastermind Program",
+      quote: "Kunaal is only the best mentor in this world I feel. I have gone through many Digital coaches till now but no one can replace Kunal in training. May god bless him to train more people like us.🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻",
       rating: 5,
       delay: "0s"
     },
     {
-      name: "Priya Patel",
-      role: "Founder",
-      company: "StartupXYZ",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
-      quote: "From zero to launching my first AI-powered SaaS in just 3 weeks. Incredible program!",
+      name: "Indrajit Pal",
+      role: "Student",
+      company: "AI Mastermind Program",
+      quote: "In my journey of learning, I've come across many digital coaches, but none have touched my heart and mind the way Kunal has. He isn't just a mentor—he's a true guide, someone who genuinely wants to see us grow. His way of teaching makes you feel seen, understood, and empowered. I feel truly blessed to have learned under him. May God continue to bless him so he can uplift many more lives like ours. A heartfelt thank you to Arpan as well, whose support made executing tasks smoother and more achievable. Grateful to both of them for being such a beautiful part of this learning experience.",
       rating: 5,
       delay: "0.2s"
     },
     {
-      name: "Amit Kumar",
-      role: "Sales Manager",
-      company: "SalesForce Inc",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-      quote: "The automation templates alone are worth 10x the price. My lead qualification is now 100% automated.",
+      name: "Suju Pillai",
+      role: "Student",
+      company: "AI Mastermind Program",
+      quote: "Kunal's session stood out compared to others I've attended. I really appreciated his focus on practical application alongside theory (not just theory). Thank you, Kunal!",
       rating: 5,
       delay: "0.4s"
     }
@@ -69,17 +66,9 @@ export const SuccessStories = () => {
                 "{testimonial.quote}"
               </blockquote>
 
-              {/* Profile with enhanced animations */}
+              {/* Profile without image */}
               <div className="text-center">
-                <div className="relative inline-block mb-3">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full mx-auto object-cover border-2 border-yellow-400 transition-all duration-500 group-hover:scale-110 group-hover:border-yellow-300"
-                  />
-                  <div className="absolute inset-0 bg-yellow-400/20 rounded-full scale-0 group-hover:scale-125 transition-transform duration-700 ease-out"></div>
-                </div>
-                <div className="font-semibold text-white transition-all duration-300 group-hover:text-yellow-400">{testimonial.name}</div>
+                <div className="font-semibold text-white transition-all duration-300 group-hover:text-yellow-400 mb-1">{testimonial.name}</div>
                 <div className="text-sm text-gray-400 transition-all duration-300 group-hover:text-gray-300">{testimonial.role}</div>
                 <div className="text-sm text-yellow-400 font-medium transition-all duration-300 group-hover:text-yellow-300">{testimonial.company}</div>
               </div>
