@@ -65,10 +65,10 @@ export const FinalCTA = () => {
           <p className="text-gray-400 text-lg transition-all duration-300 hover:text-gray-300">
             Questions? Email us at{' '}
             <a 
-              href="mailto:hello@datasciencemasterminds.com" 
+              href="mailto:support@datasciencemasterminds.com" 
               className="text-yellow-400 hover:text-yellow-300 underline transition-all duration-300 hover:scale-105 inline-block"
             >
-              hello@datasciencemasterminds.com
+              support@datasciencemasterminds.com
             </a>
           </p>
         </div>
