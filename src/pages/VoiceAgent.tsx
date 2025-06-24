@@ -6,8 +6,6 @@ import { VoiceAgentFeatures } from '@/components/VoiceAgentFeatures';
 import { VoiceAgentDemo } from '@/components/VoiceAgentDemo';
 import { VoiceAgentHowItWorks } from '@/components/VoiceAgentHowItWorks';
 import { VoiceAgentIntegrations } from '@/components/VoiceAgentIntegrations';
-import { VoiceAgentTestimonials } from '@/components/VoiceAgentTestimonials';
-import { VoiceAgentPricing } from '@/components/VoiceAgentPricing';
 import { VoiceAgentFAQ } from '@/components/VoiceAgentFAQ';
 
 const VoiceAgent = () => {
@@ -19,8 +17,6 @@ const VoiceAgent = () => {
       <VoiceAgentDemo />
       <VoiceAgentHowItWorks />
       <VoiceAgentIntegrations />
-      <VoiceAgentTestimonials />
-      <VoiceAgentPricing />
       <VoiceAgentFAQ />
     </div>
   );
