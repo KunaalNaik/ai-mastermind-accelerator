@@ -66,8 +66,8 @@ export const VoiceAgentHero = () => {
               <div className="text-gray-400 transition-all duration-300 group-hover:text-gray-300">More Efficient</div>
             </div>
             <div className="transform hover:scale-110 transition-all duration-500 cursor-pointer group animate-fade-in" style={{ animationDelay: '1.2s' }}>
-              <div className="text-3xl font-bold text-blue-400 transition-all duration-300 group-hover:text-blue-300">₹2</div>
-              <div className="text-gray-400 transition-all duration-300 group-hover:text-gray-300">Per Call</div>
+              <div className="text-3xl font-bold text-blue-400 transition-all duration-300 group-hover:text-blue-300">AI</div>
+              <div className="text-gray-400 transition-all duration-300 group-hover:text-gray-300">Powered</div>
             </div>
           </div>
         </div>
