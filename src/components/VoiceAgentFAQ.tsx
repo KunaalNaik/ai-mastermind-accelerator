@@ -31,13 +31,13 @@ export const VoiceAgentFAQ = () => {
   ];
 
   return (
-    <section className="py-20 bg-black">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in">
+    <section className="py-12 sm:py-16 lg:py-20 bg-black">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in px-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto animate-fade-in px-4" style={{ animationDelay: '0.2s' }}>
             Everything you need to know about AI voice agents
           </p>
         </div>
@@ -48,13 +48,13 @@ export const VoiceAgentFAQ = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-gray-900 border-gray-800 rounded-lg px-6 animate-fade-in"
+                className="bg-gray-900 border-gray-800 rounded-lg px-4 sm:px-6 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <AccordionTrigger className="text-white hover:text-yellow-400 text-left text-lg font-semibold">
+                <AccordionTrigger className="text-white hover:text-yellow-400 text-left text-base sm:text-lg font-semibold py-4">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-300 text-base leading-relaxed">
+                <AccordionContent className="text-gray-300 text-sm sm:text-base leading-relaxed pb-4">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
